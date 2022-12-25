@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+#icon-localizar {
+  background-image: url(../assets/icons/stores.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#link-localizar {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bolder;
+  color: black;
+}
+
+/* -------------------------  MAIN - INICIO  ------------------------- */
+
+#encabezado {
+  background-image: url(../assets/images/fondo.png);
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.titulos {
+  color: rgb(255, 255, 255, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+.subtitulos {
+  color: rgb(47, 4, 4);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+#producto {
+  transition: transform 1s;
+  -webkit-transition: 1s;
+}
+#producto:hover {
+  transform: scale(1.045);
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+#descripcion {
+  border-color: rgb(47, 4, 4) !important;
+  font-family: "Roboto", sans-serif;
+  color: rgb(47, 4, 4) !important;
+  font-size: 15px;
+}
+
+/* ----------------------------------------------------------- */
+
+#footer-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+#footer-title h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px !important;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(123, 78, 78);
+}
+
+#footer-contact {
+  font-style: normal !important;
+  margin-left: 2px;
+  padding-left: 2px;
+}
+
+#footer-pages {
+  font-style: normal !important;
+  font-family: "Roboto", sans-serif;
+  text-decoration-line: none;
+  color: black;
+}
+
+#footer-pages:hover {
+  color: rgb(123, 78, 78) !important;
+}
+
+/* -------------------------  MAIN - MENU  ------------------------- */
+
+span h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+
+span h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+
+div #boton {
+  background-color: rgb(68, 5, 5) !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  letter-spacing: 1.5px;
+}
+
+#boton:hover {
+  background-color: black !important;
+}
+
+#menu-productos {
+  height: 150px;
+  width: 155px;
+  transition: transform 1s;
+  -webkit-transition: 1s;
+}
+
+#menu-productos:hover {
+  transform: scale(1.035);
+  border-radius: 100%;
+  border: 10px solid transparent;
+  border-color: darkgray;
+  background-color: #1e3932;
+}
+
+div h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+/* -----------------------   media querys   ----------------------- */
+
+/* footer */
+@media only screen and (max-width: 991px) {
+
+  #footer-text h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 8px !important;
+    text-align: left;
+  }
+
+  div #footer-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 9px !important;
+    text-align: center;
+  }
+  
+
+  #footer-title h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 11px !important;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(123, 78, 78);
+  }
+
+  #footer-title ul li i{
+    font-size: 10px;
+  }
+
+  #footer-title p {
+    font-family: "Roboto", sans-serif;
+    font-size: 8px !important;
+    text-align: left; 
+  }
+
+  #footer-contact {
+    font-style: normal !important;
+    margin-left: 2px;
+    padding-left: 2px;
+    font-size: 7px;
+  }
+
+  #footer-pages {
+    font-size: 7px;
+    font-style: normal !important;
+    font-family: "Roboto", sans-serif;
+    text-decoration-line: none;
+    color: black;
+    text-align: center; 
+  }
+
+  #networks div a i {
+    font-size: 10px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+
+/* ------------------------  MAIN - DOMICILIOS  ------------------------- */
+
+#encabezado p{
+    color: rgb(255, 255, 255, 1);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal !important;
+}
+
+#opt-domicilio{
+  background-color: #ff463b;
+  align-items: center;
+  justify-content: center;
+}
+
+#opt-domicilio image{
+  height: 230px !important;
+  width: 280px !important;
+}
+
+#opt-domicilio i{
+  font-size: 120px;
+  text-align: center;
+  color: white;
+}
+
+#opt-domicilio i a{
+  font-size: 25px;
+  font-style: normal !important;
+  text-decoration: none;
+  color: white;
+}
+
+#opt-domicilio button{
+  background-color: white !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+  font-weight: bolder;
+}
+
+#opt-domicilio:hover {
+  transform: scale(1.025); 
+}
+
+#btn-rappi{
+  color: #ff463b;;
+}
+
+#btn-whatsapp{
+  color: #25d367;
+}
+
+#btn-enlinea{
+  color: #00adee;
+}
+
+#opt-domicilio button:hover{
+  background-color: transparent !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+  font-weight: bolder;
+  color: white;
+}
+
+@media only screen and (max-width: 1399.79px) {
+  
+  #opt-domicilio i{
+    margin-top: auto !important;
+    padding-top: 38px !important;
+  }
+
+}
+
+
+/* ------------------------  MAIN - NOSOTROS  ------------------------- */
+
+
+#about{
+  border-color: rgb(68, 5, 5) !important;
+}
+
+#about h1{
+  color: rgb(68, 5, 5); 
+  text-align: left !important; 
+  letter-spacing:normal;
+}
+
+#about{
+  text-align: left; 
+}
+
+#about h3{
+  color: rgb(68, 5, 5);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  #about img{
+    visibility: hidden !important;
+    display: none;
+  }
+
+  #col-about{
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  #about p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #about h3{
+    text-align: center;
+  }
+
+  #about {
+    text-align: center;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+
+}
+
+
+
+
