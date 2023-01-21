@@ -1,0 +1,31 @@
+@import "../variables";
+
+
+#encabezado {
+    background-image: url(../assets/images/fondo.png);
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.titulos {
+    @include titulos;
+    color: rgb(255, 255, 255);
+}
+
+.subtitulos {
+    @include subtitulos;
+    font-size: 18px;
+}
+
+#producto {
+    @include transition;
+
+    &:hover {
+        @include transform;
+    }
+}
+
+#descripcion {
+    border-color: rgb(47, 4, 4) !important;
+    @include parrafos;
+}

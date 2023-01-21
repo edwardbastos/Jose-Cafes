@@ -1,0 +1,53 @@
+@import "../variables";
+
+#about {
+    border-color: rgb(68, 5, 5) !important;
+}
+
+#about {
+
+    h1 {
+        color: rgb(68, 5, 5);
+        text-align: left !important;
+        letter-spacing: normal;
+    }
+
+    h3 {
+        color: rgb(68, 5, 5);
+        @include textos;
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: left;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #about img {
+        visibility: hidden !important;
+        display: none;
+    }
+
+    #col-about {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    #about p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #about h3 {
+        text-align: center;
+    }
+
+    #about {
+        text-align: center;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+
+}

@@ -1,0 +1,60 @@
+@import "../node_modules/bootstrap/scss/mixins";
+
+$breakpoints: (
+   "sm-phone": 320px,
+  "phone": 576px,
+   "tablet": 768px,
+   "laptop": 992px,
+  "desktop": 1200рх,
+  "xl-desktop": 1440px,
+  "xx1-desktop": 1920px,
+) !default;
+
+@mixin textos {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+}
+
+@mixin parrafos {
+    font-family: "Roboto", sans-serif;
+    color: rgb(47, 4, 4) !important;
+    font-size: 15px;
+}
+
+@mixin iconos {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin links {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bolder;
+    color: black;
+}
+
+@mixin transition {
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+@mixin transform {
+    transform: scale(1.045);
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+@mixin titulos {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+@mixin subtitulos {
+    color: rgb(47, 4, 4);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}

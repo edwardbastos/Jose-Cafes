@@ -1,0 +1,78 @@
+@import "../variables";
+
+#encabezado {
+    p {
+        @include parrafos;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-weight: normal !important;
+    }
+}
+
+$colors: (
+    rappi: #ff463b,
+    online: #00adee,
+    whatsapp: #25d367
+);
+
+@each $name,
+$color in $colors {
+    ##{$name} {
+        background-color: $color;
+        color: $color;
+    }
+}
+
+
+#opt-domicilio {
+    div {
+        align-items: center;
+        justify-content: center;
+
+        image {
+            height: 230px !important;
+            width: 280px !important;
+        }
+
+        i {
+            font-size: 120px;
+            text-align: center;
+            color: white;
+
+            a {
+                font-size: 25px;
+                font-style: normal !important;
+                text-decoration: none;
+                color: white;
+            }
+
+
+        }
+
+        button {
+            background-color: white !important;
+            @include textos;
+
+            &:hover {
+                @include textos;
+                background-color: transparent !important;
+                color: white;
+            }
+        }
+
+        &:hover{
+            transform: scale(1.025);
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 1399.79px) {
+
+    #opt-domicilio i {
+        margin-top: auto !important;
+        padding-top: 38px !important;
+    }
+
+}

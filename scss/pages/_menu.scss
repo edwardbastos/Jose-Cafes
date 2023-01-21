@@ -1,0 +1,54 @@
+@import "../variables";
+
+
+span {
+    h2 {
+        @include textos;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h3 {
+        @include textos;
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+
+#boton {
+    @include textos;
+    font-weight: normal;
+    background-color: rgb(68, 5, 5) !important;
+    letter-spacing: 1.5px;
+
+    &:hover {
+        background-color: black !important;
+    }
+
+}
+
+#menu-productos {
+    height: 150px;
+    width: 155px;
+    @include transition;
+
+    &:hover {
+        transform: scale(1.035);
+        border-radius: 100%;
+        border: 10px solid transparent;
+        border-color: darkgray;
+        background-color: #1e3932;
+    }
+
+}
+
+div {
+    h2 {
+        @include textos;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+}
