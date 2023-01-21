@@ -9,3 +9,4 @@ node_modules/*
 !node_modules/node-dht-sensor-chip/
 !node-dht-sensor-chip/*
 !*node-dht-sensor-chip/
+!node-dht-sensor-chip/*
