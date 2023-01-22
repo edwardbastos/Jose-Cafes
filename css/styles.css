@@ -1,41 +1,40 @@
-@media only screen and (max-width: 768px) {
-  #about img {
-    visibility: hidden !important;
-    display: none; }
+@media only screen and (min-width: 340px) and (max-width: 768px) {
   #col-about {
     padding-left: 0px !important;
     margin-left: 0px !important; }
-  #about p {
-    font-size: 15px;
-    text-align: center; }
-  #about h3, #about .h3 {
-    text-align: center; }
   #about {
     text-align: center;
     padding-left: 0px !important;
-    margin-left: 0px !important; } }
-
-@media only screen and (max-width: 991px) {
-  #footer-text h2, #footer-text .h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 8px !important;
-    text-align: left; }
-  div #footer-text {
+    margin-left: 0px !important; }
+    #about img {
+      visibility: hidden !important;
+      display: none; }
+    #about h3, #about .h3 {
+      text-align: center; }
+    #about p {
+      font-size: 15px;
+      text-align: center; }
+  #opt-domicilio div i {
+    margin-top: auto !important;
+    padding-top: 38px !important; }
+  #footer-text {
     font-family: "Roboto", sans-serif;
     font-size: 9px !important;
     text-align: center; }
+    #footer-text h2, #footer-text .h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 8px !important;
+      text-align: left; }
   #footer-title h1, #footer-title .h1 {
-    font-family: "Roboto", sans-serif;
     font-size: 11px !important;
-    font-weight: bold;
     text-align: center;
-    color: #7b4e4e; }
-  #footer-title ul li i {
-    font-size: 10px; }
+    color: #7b4e4e !important; }
   #footer-title p {
     font-family: "Roboto", sans-serif;
     font-size: 8px !important;
     text-align: left; }
+  #footer-title ul li i {
+    font-size: 10px; }
   #footer-contact {
     font-style: normal !important;
     margin-left: 2px;
@@ -43,22 +42,18 @@
     font-size: 7px; }
   #footer-pages {
     font-size: 7px;
-    font-style: normal !important;
-    font-family: "Roboto", sans-serif;
-    text-decoration-line: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bolder;
     color: black;
     text-align: center; }
-  #networks div a i {
-    font-size: 10px;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+  #networks div a {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
     margin-left: 0px !important;
-    margin-right: 0px !important; } }
-
-@media only screen and (max-width: 1399.79px) {
-  #opt-domicilio i {
-    margin-top: auto !important;
-    padding-top: 38px !important; } }
+    margin-right: 0px !important; }
+    #networks div a i {
+      font-size: 10px; } }
 
 :root {
   --bs-blue: #0d6efd;
@@ -370,8 +365,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; 
-  appearance: button;}
+  -webkit-appearance: button; }
   button:not(:disabled),
   [type="button"]:not(:disabled),
   [type="reset"]:not(:disabled),
@@ -418,8 +412,7 @@ legend {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
-  appearance: textfield; }
+  -webkit-appearance: textfield; }
 
 /* rtl:raw:
 [type="tel"],
@@ -437,8 +430,7 @@ legend {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
-  appearance: button; }
+  -webkit-appearance: button; }
 
 output {
   display: inline-block; }
@@ -4425,7 +4417,7 @@ body {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
-  font-size: 20px !important;
+  font-size: 20px;
   text-align: center;
   color: #7b4e4e; }
 

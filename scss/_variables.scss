@@ -1,5 +1,8 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
+
+$vista: mobile;
+
 $breakpoints: (
    "sm-phone": 320px,
   "phone": 576px,

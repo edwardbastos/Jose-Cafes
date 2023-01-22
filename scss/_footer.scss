@@ -12,7 +12,7 @@
 
     h1 {
         @include textos;
-        font-size: 20px !important;
+        font-size: 20px;
         text-align: center;
         color: rgb(123, 78, 78);
     }

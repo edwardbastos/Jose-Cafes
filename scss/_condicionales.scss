@@ -1,100 +1,122 @@
 @import "./variables";
 
+@if $vista==mobile {
+
+    @media only screen and (min-width: 340px) and (max-width: 768px) {
+
+        #col-about {
+            padding-left: 0px !important;
+            margin-left: 0px !important;
+        }
+
+        #about {
+            text-align: center;
+            padding-left: 0px !important;
+            margin-left: 0px !important;
+
+            img {
+                visibility: hidden !important;
+                display: none;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        #opt-domicilio {
+            div {
+                i {
+                    margin-top: auto !important;
+                    padding-top: 38px !important;
+                }
+            }
+        }
+
+        #footer-text {
+            font-family: "Roboto", sans-serif;
+            font-size: 9px !important;
+            text-align: center;
+
+            h2 {
+                font-family: "Roboto", sans-serif;
+                font-size: 8px !important;
+                text-align: left;
+            }
+        }
 
 
+        #footer-title {
+            h1 {
+                font-size: 11px !important;
+                text-align: center;
+                color: rgb(123, 78, 78) !important;
+            }
 
-@media only screen and (max-width: 768px) {
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 8px !important;
+                text-align: left;
+            }
 
-    #about img {
-        visibility: hidden !important;
-        display: none;
-    }
+            ul {
+                li {
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
 
-    #col-about {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-    }
+        #footer-contact {
+            font-style: normal !important;
+            margin-left: 2px;
+            padding-left: 2px;
+            font-size: 7px;
+        }
 
-    #about p {
-        font-size: 15px;
-        text-align: center;
-    }
+        #footer-pages {
+            font-size: 7px;
+            @include links;
+            text-align: center;
+        }
 
-    #about h3 {
-        text-align: center;
-    }
 
-    #about {
-        text-align: center;
-        padding-left: 0px !important;
-        margin-left: 0px !important;
+        #networks {
+            div {
+                a {
+                    padding-left: 5px !important;
+                    padding-right: 5px !important;
+                    margin-left: 0px !important;
+                    margin-right: 0px !important;
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
     }
 
 }
 
-@media only screen and (max-width: 991px) {
+@else if $vista==mobile {
 
-    #footer-text h2 {
-        font-family: "Roboto", sans-serif;
-        font-size: 8px !important;
-        text-align: left;
-    }
+    @media only screen and (min-width: 820px) {
 
-    div #footer-text {
-        font-family: "Roboto", sans-serif;
-        font-size: 9px !important;
-        text-align: center;
-    }
+        .navbar-toggler {
+            visibility:visible;
+        }
 
+        #menu {
+            visibility: collapse;
+        }
 
-    #footer-title h1 {
-        font-family: "Roboto", sans-serif;
-        font-size: 11px !important;
-        font-weight: bold;
-        text-align: center;
-        color: rgb(123, 78, 78);
-    }
-
-    #footer-title ul li i {
-        font-size: 10px;
-    }
-
-    #footer-title p {
-        font-family: "Roboto", sans-serif;
-        font-size: 8px !important;
-        text-align: left;
-    }
-
-    #footer-contact {
-        font-style: normal !important;
-        margin-left: 2px;
-        padding-left: 2px;
-        font-size: 7px;
-    }
-
-    #footer-pages {
-        font-size: 7px;
-        font-style: normal !important;
-        font-family: "Roboto", sans-serif;
-        text-decoration-line: none;
-        color: black;
-        text-align: center;
-    }
-
-    #networks div a i {
-        font-size: 10px;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-        margin-left: 0px !important;
-        margin-right: 0px !important;
-    }
-}
-
-@media only screen and (max-width: 1399.79px) {
-
-    #opt-domicilio i {
-        margin-top: auto !important;
-        padding-top: 38px !important;
     }
 
 }
