@@ -8,13 +8,27 @@
 body {
     @include textos;
 
-    #icon-localizar {
-        background-image: url(../assets/icons/stores.svg);
-        @include iconos;
+    header {
 
-        #link-localizar {
-        @include links;
+        nav {
+
+            #contenedor {
+
+                @include box-father;
+
+                #icon-localizar {
+                    background-image: url(../assets/icons/stores.svg);
+                    @include iconos;
+
+                    #link-localizar {
+                        @include links;
+                    }
+
+                }
+            }
+
         }
 
-      }                                             
-  }
+    }
+
+}

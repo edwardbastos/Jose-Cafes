@@ -7,6 +7,10 @@
     border-top-right-radius: 20px !important;
 }
 
+#separador {
+    background-image: url(../assets/images/fondo.png);
+}
+
 .titulos {
     @include titulos;
     color: rgb(255, 255, 255);
@@ -26,6 +30,7 @@
 }
 
 #descripcion {
-    border-color: rgb(47, 4, 4) !important;
+    border-color: rgb(56, 4, 4) !important;
     @include parrafos;
 }
+

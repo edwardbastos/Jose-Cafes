@@ -1,34 +1,37 @@
 @import "./variables";
 
-#footer-text {
+footer {
 
-    h2 {
-        @include textos;
-        text-align: center;
-    }
+        #footer-text {
+
+            h2 {
+                @include textos;
+                text-align: center;
+            }
+        }
+
+        #footer-title {
+
+            h1 {
+                @include textos;
+                font-size: 19px;
+                text-align: center;
+                color: rgb(123, 78, 78);
+            }
+        }
+
+        #footer-contact {
+            @include links;
+            margin-left: 2px;
+            padding-left: 2px;
+        }
+
+        #footer-pages {
+            @include links;
+
+            &:hover {
+                color: rgb(123, 78, 78);
+            }
+        }
+
 }
-
-#footer-title {
-
-    h1 {
-        @include textos;
-        font-size: 20px;
-        text-align: center;
-        color: rgb(123, 78, 78);
-    }
-}
- 
-#footer-contact {
-    @include links;
-    margin-left: 2px;
-    padding-left: 2px;
-}
-
-#footer-pages {
-    @include links;
-
-    &:hover{
-        color: rgb(123, 78, 78);
-    }
-}
-

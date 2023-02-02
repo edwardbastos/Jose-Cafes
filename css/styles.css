@@ -4395,33 +4395,37 @@ progress {
 body {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px; }
-  body #icon-localizar {
-    background-image: url(../assets/icons/stores.svg);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain; }
-    body #icon-localizar #link-localizar {
-      text-decoration: none;
-      font-style: normal;
-      font-weight: bolder;
-      color: black; }
+  font-size: 16px; }
+  body header nav #contenedor {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    box-shadow: 2px !important; }
+    body header nav #contenedor #icon-localizar {
+      background-image: url(../assets/icons/stores.svg);
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      body header nav #contenedor #icon-localizar #link-localizar {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bolder;
+        color: black; }
 
-#footer-text h2, #footer-text .h2 {
+footer #footer-text h2, footer #footer-text .h2 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   text-align: center; }
 
-#footer-title h1, #footer-title .h1 {
+footer #footer-title h1, footer #footer-title .h1 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-size: 20px;
+  font-size: 16px;
+  font-size: 19px;
   text-align: center;
   color: #7b4e4e; }
 
-#footer-contact {
+footer #footer-contact {
   text-decoration: none;
   font-style: normal;
   font-weight: bolder;
@@ -4429,12 +4433,12 @@ body {
   margin-left: 2px;
   padding-left: 2px; }
 
-#footer-pages {
+footer #footer-pages {
   text-decoration: none;
   font-style: normal;
   font-weight: bolder;
   color: black; }
-  #footer-pages:hover {
+  footer #footer-pages:hover {
     color: #7b4e4e; }
 
 #encabezado {
@@ -4442,17 +4446,22 @@ body {
   border-top-left-radius: 20px !important;
   border-top-right-radius: 20px !important; }
 
+#separador {
+  background-image: url(../assets/images/fondo.png); }
+
 .titulos {
   font-family: "Roboto", sans-serif;
   font-size: 35px;
   text-align: center;
   letter-spacing: 2.5px;
+  font-weight: bolder;
   color: white; }
 
 .subtitulos {
   color: #2f0404;
   font-family: "Roboto", sans-serif;
   text-align: center;
+  font-weight: bolder;
   font-size: 18px; }
 
 #producto {
@@ -4464,29 +4473,29 @@ body {
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47); }
 
 #descripcion {
-  border-color: #2f0404 !important;
+  border-color: #380404 !important;
   font-family: "Roboto", sans-serif;
-  color: #2f0404 !important;
+  color: #2f0404;
   font-size: 15px; }
 
 span h2, span .h2 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-size: 20px;
   text-align: center; }
 
 span h3, span .h3 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-size: 15px;
   text-align: center; }
 
 #boton {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: normal;
   background-color: #440505 !important;
   letter-spacing: 1.5px; }
@@ -4508,14 +4517,14 @@ span h3, span .h3 {
 div h2, div .h2 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-size: 20px;
   text-align: center;
   position: relative; }
 
 #encabezado p {
   font-family: "Roboto", sans-serif;
-  color: #2f0404 !important;
+  color: #2f0404;
   font-size: 15px;
   color: white;
   text-align: center;
@@ -4543,20 +4552,21 @@ div h2, div .h2 {
     font-size: 120px;
     text-align: center;
     color: white; }
-    #opt-domicilio div i a {
-      font-size: 25px;
-      font-style: normal !important;
-      text-decoration: none;
-      color: white; }
-  #opt-domicilio div button {
+  #opt-domicilio div h3, #opt-domicilio div .h3 {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-size: 20px;
+    color: white; }
+  #opt-domicilio div a {
     background-color: white !important;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
-    font-size: 17px; }
-    #opt-domicilio div button:hover {
+    font-size: 16px; }
+    #opt-domicilio div a:hover {
       font-weight: bold;
       font-family: "Roboto", sans-serif;
-      font-size: 17px;
+      font-size: 16px;
       background-color: transparent !important;
       color: white; }
   #opt-domicilio div:hover {
@@ -4579,7 +4589,7 @@ div h2, div .h2 {
   color: #440505;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-size: 25px;
   font-weight: bolder;
   text-align: left; }

@@ -13,15 +13,22 @@ $breakpoints: (
   "xx1-desktop": 1920px,
 ) !default;
 
+
+@mixin box-father {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    box-shadow: 2px !important;
+}
+
 @mixin textos {
     font-weight: bold;
     font-family: "Roboto", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 @mixin parrafos {
     font-family: "Roboto", sans-serif;
-    color: rgb(47, 4, 4) !important;
+    color:rgb(47, 4, 4);
     font-size: 15px;
 }
 
@@ -54,10 +61,12 @@ $breakpoints: (
     font-size: 35px;
     text-align: center;
     letter-spacing: 2.5px;
+    font-weight: bolder;
 }
 
 @mixin subtitulos {
     color: rgb(47, 4, 4);
     font-family: "Roboto", sans-serif;
     text-align: center;
+    font-weight: bolder;
 }
