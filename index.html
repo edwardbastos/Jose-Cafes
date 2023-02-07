@@ -23,100 +23,126 @@
 </head>
 
 <body class="container-md">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top bg-light">
-            <div class="container-fluid shadow bg-white rounded-bottom pb-2" id="contenedor">
-    
-                <a class="navbar-brand mx-md-5" href="./index.html">
-                    <img src="./assets/images/logo.png" alt="logo principal de Jose-Cafes" height="80" class="rounded-circle">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-collapse collapse my-sm-3" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link mx-4" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-4" href="./pages/menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-4" href="./pages/domicilios.html">Domicilios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-4" href="./pages/nosotros.html">Quienes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-4" href="./pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav flex-row flex-wrap text-black" aria-labelledby="navbarDropdownMenuLink">
-                        <li class="nav-item col-6 col-md-auto p-3" style="list-style: none">
-                            <i class="bi bi-geo-alt-fill" id="icon-localizar">
-                                <a class="nav-link d-inline-block pe-sm-5" href="./pages/localizar.html" id="link-localizar">Localizar
-                                    tienda</a>
-                            </i>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid shadow bg-white rounded-bottom pb-2" id="contenedor">
+            <a class="navbar-brand mx-md-5" href="./index.html">
+                <img src="./assets/images/logo.png" alt="logo principal de Jose-Cafes" height="80"
+                    class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse my-sm-3" id="navbarSupportedContent">
+                <ul class="nav navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="./pages/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="./pages/domicilios.html">Domicilios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="./pages/nosotros.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row flex-wrap text-black ms-2" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="nav-item p-3" style="list-style: none">
+                        <i class="bi bi-geo-alt-fill" id="icon-localizar">
+                            <a class="nav-link d-inline-block pe-sm-5" href="./pages/localizar.html"
+                                id="link-localizar">Localizar
+                                tienda</a>
+                        </i>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <main>
-        <div class="container-md shadow bg-white rounded pt-2">
-            <div class="row bg-light pt-2">
-                <div class="col-md-12 bg-light rounded pb-5 pt-5" id="encabezado">
+        <div class="container-md shadow rounded pt-2 pe-0 ps-0">
+            <div class="container-fluid pe-0 ps-0 pb-4">
+                <div class="bg-light mb-3 rounded-top pb-5 pt-5" id="encabezado">
                     <h1 class="titulos">¡Nuestros cafés más pedidos!</h1>
                 </div>
-                <div class="col-md-4 bg-light pb-5 pt-4">
-                    <h2 class="subtitulos">Café capuchino</h2>
-                    <div class="col-md-12 bg-light rounded mt-3 pt-3 pe-3 ps-3 pb-4">
-                        <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="producto"
-                            src="./assets/images/cappucino.jpg" />
-                        <div class="col-md-12 pt-3 pe-3 ps-3 pb-2 rounded-5 border border-3" id="descripcion">
-                            <p class="text-center"> El café cappuchino es una bebida nacida en
-                                Italia, preparada con café expreso y leche montada con vapor para darle
-                                cremosidad.Un capuchino se compone de 125 ml de leche y 25 ml de café expreso, en
-                                ocasiones
-                                se agrega cacao en polvo o canela según el gusto del consumidor.</p>
+                <div id="carouselSlider" class="carousel slide carousel-fade mb-5" data-bs-touch="false"
+                    data-bs-interval="false" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video src="./assets/video/carousel-cappuchino.mp4" class="img-fluid" autoplay loop
+                                muted></video>
+                            <div class="carousel-caption bg-dark position-absolute float-start">
+                                <h5 class="titulos">Caffé Cappuchino</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="./assets/video/carousel-latte.mp4" class="img-fluid" autoplay loop
+                                muted></video>
+                            <div class="carousel-caption bg-dark">
+                                <h5 class="titulos">Caffé Latte</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="./assets/video/carousel-macchiato.mp4" class="img-fluid" autoplay loop
+                                muted></video>
+                            <div class="carousel-caption bg-dark">
+                                <h5 class="titulos">Caffé Macchiato</h5>
+                            </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
                 </div>
-                <div class="col-md-4 bg-light pb-5 pt-4">
-                    <h2 class="subtitulos">Café latte</h2>
-                    <div class="col-md-12 bg-light rounded-5 mt-3 pt-3 pe-3 ps-3 pb-4">
-                        <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="producto"
-                            src="./assets/images/latte.jpg" />
-                        <div class="col-md-12 pt-3 pe-3 ps-3 pb-2 rounded-5 border border-3" id="descripcion">
-                            <p class="text-center"> El café latte es el hermano mayor del capuchino,
-                                donde todo gira en torno a la espuma suave y sedosa.
-                                Normalmente, el café latte se prepara con una o dos dosis de expreso (1/3 de la bebida)
-                                y 2/3 de leche calentada con vapor, con una capa de espuma de leche.
+                <div class="row justify-content-center">
+                    <div class="col-md-12 pb-3 pt-4 mb-4 border-bottom border-3"
+                        style="border-color: rgb(68, 5, 5) !important;">
+                        <h1 class="titulos" style="color: rgb(68, 5, 5);">Nuestros servicios</h1>
+                    </div>
+                    <div class="col-md-4 pb-3 pt-4">
+                        <h2 class="subtitulos">Coffee Bar</h2>
+                        <div class="col-md-12 rounded mt-3 pt-3 pe-3 ps-3 pb-2">
+                            <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="servicios"
+                                src="./assets/images/coffee-bar.jpg"/>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 bg-light pb-5 pt-4">
-                    <h2 class="subtitulos">Café macchiato</h2>
-                    <div class="col-md-12 bg-light rounded mt-3 pt-3 pe-3 ps-3 pb-4">
-                        <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="producto"
-                            src="./assets/images/macchiato.jpg" />
-                        <div class="col-md-12 pt-3 pe-3 ps-3 pb-2 rounded-5 border border-3" id="descripcion">
-                            <p class="text-center"> El café macchiato es una bebida cafeinada
-                                hecha con espresso y espuma. Un macchiato tradicional es solo un trago de espresso
-                                decorado con
-                                un poco de leche caliente que ha sido previamente evaporada, de esta forma el tiro
-                                de leche sirve para contrarestar el amargor del espresso. </p>
+                    <div class="col-md-4 pb-3 pt-4">
+                        <h2 class="subtitulos">Coffee Break</h2>
+                        <div class="col-md-12 rounded-5 mt-3 pt-3 pe-3 ps-3 pb-2">
+                            <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="servicios"
+                                src="./assets/images/coffee-breaks.jpg"/>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12 bg-light pt-5" id="separador">
+                    <div class="col-md-4 pb-3 pt-4">
+                        <h2 class="subtitulos">Coffee Staff</h2>
+                        <div class="col-md-12 rounded mt-3 pt-3 pe-3 ps-3 pb-2">
+                            <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="servicios"
+                                src="./assets/images/coffee-staff.jpg"/>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-12 pb-3 pt-5 mt-5" id="separador"></div>
         </div>
     </main>
     <footer>
@@ -171,7 +197,7 @@
                 </div>
                 <div class="col-4 bg-light pt-4" id="footer-title">
                     <h1>Contacto</h1>
-                    <ul class="mt-4 justify-content-right ms-5">
+                    <ul class="mt-4 justify-content-right">
                         <li class="d-flex me-4" style="list-style: none;">
                             <i class="bi bi-house-door-fill d-inline-flex">
                                 <a id="footer-contact">Bogotá, Cra. 13b #161-85, CO </a>
@@ -201,10 +227,15 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

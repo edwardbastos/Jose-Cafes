@@ -51,7 +51,7 @@ $breakpoints: (
 }
 
 @mixin transform {
-    transform: scale(1.045);
+    transform: scale(1.025);
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }

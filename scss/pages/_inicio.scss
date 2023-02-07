@@ -1,6 +1,12 @@
 @import "../variables";
 
 
+.carousel-item{
+    video{
+        width: 100%;
+    }
+}
+
 #encabezado {
     background-image: url(../assets/images/fondo.png);
     border-top-left-radius: 20px !important;
@@ -21,8 +27,12 @@
     font-size: 18px;
 }
 
-#producto {
+#servicios {
     @include transition;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
 
     &:hover {
         @include transform;

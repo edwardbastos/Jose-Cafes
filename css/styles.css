@@ -37,8 +37,6 @@
     font-size: 10px; }
   #footer-contact {
     font-style: normal !important;
-    margin-left: 2px;
-    padding-left: 2px;
     font-size: 7px; }
   #footer-pages {
     font-size: 7px;
@@ -4395,21 +4393,28 @@ progress {
 body {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 16px; }
-  body header nav #contenedor {
-    border-bottom-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
-    box-shadow: 2px !important; }
-    body header nav #contenedor #icon-localizar {
-      background-image: url(../assets/icons/stores.svg);
-      background-color: transparent;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      body header nav #contenedor #icon-localizar #link-localizar {
-        text-decoration: none;
-        font-style: normal;
-        font-weight: bolder;
-        color: black; }
+  font-size: 16px;
+  align-content: center !important;
+  align-items: center !important; }
+  body nav {
+    position: fixed;
+    z-index: 100;
+    margin: 0%;
+    padding: 0%; }
+    body nav #contenedor {
+      border-bottom-left-radius: 10px !important;
+      border-bottom-right-radius: 10px !important;
+      box-shadow: 2px !important; }
+      body nav #contenedor #icon-localizar {
+        background-image: url(../assets/icons/stores.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain; }
+        body nav #contenedor #icon-localizar #link-localizar {
+          text-decoration: none;
+          font-style: normal;
+          font-weight: bolder;
+          color: black; }
 
 footer #footer-text h2, footer #footer-text .h2 {
   font-weight: bold;
@@ -4441,6 +4446,9 @@ footer #footer-pages {
   footer #footer-pages:hover {
     color: #7b4e4e; }
 
+.carousel-item video {
+  width: 100%; }
+
 #encabezado {
   background-image: url(../assets/images/fondo.png);
   border-top-left-radius: 20px !important;
@@ -4464,11 +4472,15 @@ footer #footer-pages {
   font-weight: bolder;
   font-size: 18px; }
 
-#producto {
+#servicios {
   -webkit-transition: 1s;
-  transition: 1s; }
-  #producto:hover {
-    transform: scale(1.045);
+  transition: 1s;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important; }
+  #servicios:hover {
+    transform: scale(1.025);
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47); }
 
