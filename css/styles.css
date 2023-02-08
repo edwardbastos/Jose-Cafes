@@ -1,4 +1,50 @@
-@media only screen and (min-width: 340px) and (max-width: 768px) {
+@media only screen and (min-width: 314px) and (max-width: 768px) {
+  .carousel-inner .carousel-item {
+    position: relative !important; }
+    .carousel-inner .carousel-item #carouselh-1 {
+      visibility: visible !important;
+      width: 100%;
+      height: auto; }
+    .carousel-inner .carousel-item #carousel-1 {
+      visibility: hidden;
+      width: 0%;
+      height: 0%; }
+    .carousel-inner .carousel-item #carouselh-2 {
+      visibility: visible !important;
+      width: 100%;
+      height: auto; }
+    .carousel-inner .carousel-item #carousel-2 {
+      visibility: hidden;
+      width: 0%;
+      height: 0%; }
+    .carousel-inner .carousel-item #carouselh-3 {
+      visibility: visible !important;
+      width: 100%;
+      height: auto; }
+    .carousel-inner .carousel-item #carousel-3 {
+      visibility: hidden;
+      width: 0%;
+      height: 0%; }
+    .carousel-inner .carousel-item .carousel-caption {
+      margin: 0%;
+      padding: 10px; }
+      .carousel-inner .carousel-item .carousel-caption h5, .carousel-inner .carousel-item .carousel-caption .h5 {
+        font-weight: normal;
+        font-size: 10px; }
+  .row div h1, .row div .h1 {
+    color: #440505;
+    font-size: 25px !important; }
+  .row div h2, .row div .h2 {
+    color: #2f0404;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold; }
+  #encabezado h1, #encabezado .h1 {
+    font-size: 30px !important; }
+  .carousel-indicators {
+    font-size: xx-small; }
   #col-about {
     padding-left: 0px !important;
     margin-left: 0px !important; }
@@ -33,8 +79,10 @@
     font-family: "Roboto", sans-serif;
     font-size: 8px !important;
     text-align: left; }
-  #footer-title ul li i {
-    font-size: 10px; }
+  #footer-title ul {
+    padding-left: 0%; }
+    #footer-title ul li i {
+      font-size: 10px; }
   #footer-contact {
     font-style: normal !important;
     font-size: 7px; }
@@ -4446,8 +4494,30 @@ footer #footer-pages {
   footer #footer-pages:hover {
     color: #7b4e4e; }
 
-.carousel-item video {
-  width: 100%; }
+.carousel-item #carouselh-1 {
+  visibility: hidden;
+  width: 0%;
+  height: 0%; }
+
+.carousel-item #carouselh-2 {
+  visibility: hidden;
+  width: 0%;
+  height: 0%; }
+
+.carousel-item #carouselh-3 {
+  visibility: hidden;
+  width: 0%;
+  height: 0%; }
+
+.carousel-item .carousel-caption {
+  background-color: darkgrey;
+  flex-wrap: wrap; }
+  .carousel-item .carousel-caption h1, .carousel-item .carousel-caption .h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-weight: bolder; }
 
 #encabezado {
   background-image: url(../assets/images/fondo.png);
@@ -4472,17 +4542,31 @@ footer #footer-pages {
   font-weight: bolder;
   font-size: 18px; }
 
-#servicios {
+.row div {
+  border-color: #440505 !important; }
+  .row div h1, .row div .h1 {
+    color: #440505; }
+  .row div h2, .row div .h2 {
+    color: #2f0404;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold; }
+
+.row #servicios {
   -webkit-transition: 1s;
   transition: 1s;
   border-top-left-radius: 20px !important;
   border-top-right-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important; }
-  #servicios:hover {
+  .row #servicios:hover {
     transform: scale(1.025);
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47); }
+  .row #servicios p {
+    align-self: center; }
 
 #descripcion {
   border-color: #380404 !important;

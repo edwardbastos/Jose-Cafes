@@ -67,7 +67,7 @@
     <main>
         <div class="container-md shadow rounded pt-2 pe-0 ps-0">
             <div class="container-fluid pe-0 ps-0 pb-4">
-                <div class="bg-light mb-3 rounded-top pb-5 pt-5" id="encabezado">
+                <div class="bg-light mb-2 rounded-top pb-5 pt-5" id="encabezado">
                     <h1 class="titulos">¡Nuestros cafés más pedidos!</h1>
                 </div>
                 <div id="carouselSlider" class="carousel slide carousel-fade mb-5" data-bs-touch="false"
@@ -80,25 +80,31 @@
                         <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <video src="./assets/video/carousel-cappuchino.mp4" class="img-fluid" autoplay loop
-                                muted></video>
-                            <div class="carousel-caption bg-dark position-absolute float-start">
+                    <div class="carousel-inner position-relative">
+                        <div class="carousel-item active position-relative">
+                            <video src="./assets/video/carousel-cappuchino.mp4" class="img-fluid bi-share w-100"
+                                autoplay loop muted id="carousel-1"></video>
+                            <video src="./assets/video/carouselh-cappuchino.mp4" class="img-fluid bi-share w-100"
+                                autoplay loop muted id="carouselh-1"></video>
+                            <div class="carousel-caption">
                                 <h5 class="titulos">Caffé Cappuchino</h5>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <video src="./assets/video/carousel-latte.mp4" class="img-fluid" autoplay loop
-                                muted></video>
-                            <div class="carousel-caption bg-dark">
+                        <div class="carousel-item position-relative">
+                            <video src="./assets/video/carousel-latte.mp4" class="img-fluid bi-share w-100" autoplay
+                                loop muted id="carousel-2"></video>
+                            <video src="./assets/video/carouselh-latte.mp4" class="img-fluid bi-share w-100" autoplay
+                                loop muted id="carouselh-2"></video>
+                            <div class="carousel-caption">
                                 <h5 class="titulos">Caffé Latte</h5>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <video src="./assets/video/carousel-macchiato.mp4" class="img-fluid" autoplay loop
-                                muted></video>
-                            <div class="carousel-caption bg-dark">
+                        <div class="carousel-item position-relative">
+                            <video src="./assets/video/carousel-macchiato.mp4" class="img-fluid bi-share w-100" autoplay
+                                loop muted id="carousel-3"></video>
+                            <video src="./assets/video/carouselh-macchiato.mp4" class="img-fluid bi-share w-100"
+                                autoplay loop muted id="carouselh-3"></video>
+                            <div class="carousel-caption">
                                 <h5 class="titulos">Caffé Macchiato</h5>
                             </div>
                         </div>
@@ -115,29 +121,34 @@
                     </button>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-12 pb-3 pt-4 mb-4 border-bottom border-3"
-                        style="border-color: rgb(68, 5, 5) !important;">
-                        <h1 class="titulos" style="color: rgb(68, 5, 5);">Nuestros servicios</h1>
+                    <div class="col-md-12 pb-3 pt-4 mb-4 border-bottom border-3">
+                        <h1 class="titulos">Nuestros servicios</h1>
                     </div>
                     <div class="col-md-4 pb-3 pt-4">
                         <h2 class="subtitulos">Coffee Bar</h2>
                         <div class="col-md-12 rounded mt-3 pt-3 pe-3 ps-3 pb-2">
                             <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="servicios"
-                                src="./assets/images/coffee-bar.jpg"/>
+                                src="./assets/images/coffee-bar.jpg" />
+                            <p>El concepto popular de una cafeteria, donde una barra, una máquina, una licuadora y
+                                herramientas de barista crean la magia de la atención.</p>
                         </div>
                     </div>
                     <div class="col-md-4 pb-3 pt-4">
                         <h2 class="subtitulos">Coffee Break</h2>
                         <div class="col-md-12 rounded-5 mt-3 pt-3 pe-3 ps-3 pb-2">
                             <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="servicios"
-                                src="./assets/images/coffee-breaks.jpg"/>
+                                src="./assets/images/coffee-breaks.jpg" />
+                            <p>Ofrecemos espacios con servicio continuo de café, en zonas de corporativas
+                                donde las empresas tienen juntas, oficinas, etc.</p>
                         </div>
                     </div>
                     <div class="col-md-4 pb-3 pt-4">
                         <h2 class="subtitulos">Coffee Staff</h2>
                         <div class="col-md-12 rounded mt-3 pt-3 pe-3 ps-3 pb-2">
                             <img class="img-fluid bi-share rounded border-opacity-50 mb-5" id="servicios"
-                                src="./assets/images/coffee-staff.jpg"/>
+                                src="./assets/images/coffee-staff.jpg" />
+                            <p>Tenemos estaciones mobiles, ideales para juntas de negocios o presentaciones de ventas,
+                                en donde cobramos un consumo mínimo.</p>
                         </div>
                     </div>
                 </div>
@@ -226,6 +237,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.foo', { duration: 2000 });
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

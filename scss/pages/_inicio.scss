@@ -2,8 +2,30 @@
 
 
 .carousel-item{
-    video{
-        width: 100%;
+
+    #carouselh-1{
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+    #carouselh-2{
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+    #carouselh-3{
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    .carousel-caption{
+        background-color: darkgrey;
+        flex-wrap: wrap;
+        h1{
+            @include titulos
+
+        }
     }
 }
 
@@ -27,17 +49,39 @@
     font-size: 18px;
 }
 
-#servicios {
-    @include transition;
-    border-top-left-radius: 20px !important;
-    border-top-right-radius: 20px !important;
-    border-bottom-left-radius: 20px !important;
-    border-bottom-right-radius: 20px !important;
+.row{
+    
+    div{
+        border-color: rgb(68, 5, 5) !important;
 
-    &:hover {
-        @include transform;
+        h1{
+            color: rgb(68, 5, 5);
+        }
+
+        h2{
+            @include subtitulos;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    #servicios {
+        @include transition;
+        border-top-left-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+        border-bottom-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+    
+        &:hover {
+            @include transform;
+        }
+
+        p{
+          align-self: center;
+        }
     }
 }
+
 
 #descripcion {
     border-color: rgb(56, 4, 4) !important;
